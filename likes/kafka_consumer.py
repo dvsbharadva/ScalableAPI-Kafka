@@ -34,8 +34,6 @@ class KafkaConsumerServices:
 
     def consume_msg(self):
         print("consumer started..")
-        total_msg =0
-        list_batch = defaultdict(int)
         try:
             while True:
                 self.logger.info("Polling for messages...")
